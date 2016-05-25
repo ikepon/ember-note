@@ -27,6 +27,7 @@ export default function() {
   this.namespace = 'api';
 
   this.get('/notes');
+  this.post('/notes');
   this.get('/notes/:id');
   this.delete('/notes/:id');
 }

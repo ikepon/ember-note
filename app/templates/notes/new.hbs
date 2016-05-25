@@ -1,1 +1,5 @@
-{{outlet}}
+<form>
+  {{input type="text" value=title size="50"}}
+  {{textarea value=body cols="80" rows="6"}}
+  <button {{action "createNote"}}>作成</button>
+</form>

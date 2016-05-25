@@ -1,5 +1,6 @@
 <header>
   <h1 class="title">Ember Note</h1>
+  {{link-to "新規作成" "notes.new"}}
 </header>
 <div class="col-xs-4">
   {{note-listing notes=model deleteNote="deleteNote"}}
