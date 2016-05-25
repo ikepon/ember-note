@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('notes', function() {
     this.route('show', { path: '/:note_id' });
-    this.route('edit');
+    this.route('edit', { path: '/:note_id/edit' });
   });
 });
 
