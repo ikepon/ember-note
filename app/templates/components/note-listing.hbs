@@ -5,6 +5,7 @@
         {{#link-to "notes.show" note}}
           {{note.title}}
         {{/link-to}}
+        <button {{action "deleteNote" note}}>削除</button>
       </li>
     {{/each}}
   </ul>
