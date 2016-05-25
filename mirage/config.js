@@ -25,4 +25,5 @@ export default function() {
   */
 
   this.get('/notes');
+  this.get('/notes/:id');
 }
