@@ -1,1 +1,7 @@
-{{yield}}
+<div class="col-xs-4">
+  <ul class="notes">
+    {{#each notes as |note|}}
+      <li class="note-title">{{note.title}}</li>
+    {{/each}}
+  </ul>
+</div>
