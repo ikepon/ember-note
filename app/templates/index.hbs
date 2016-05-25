@@ -1,1 +1,9 @@
-{{outlet}}
+<div class="col-xs-4">
+  <ul class="notes">
+    {{#each model as |note|}}
+      <li class="note-title">{{note.title}}</li>
+    {{/each}}
+  </ul>
+</div>
+<div class="col-xs-8">
+</div>
