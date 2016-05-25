@@ -24,30 +24,5 @@ export default function() {
     http://www.ember-cli-mirage.com/docs/v0.2.0-beta.7/shorthands/
   */
 
-  this.get('/notes', function() {
-    return {
-      data: [{
-        type: 'notes',
-        id: 1,
-        attributes: {
-          title: 'NoteTitle 1',
-          body: 'note body1 note body1 note body1 note body1 note body1 note body1 note body1 note body1 note body1 note body1 note body1 note body1 note body1'
-        }
-      }, {
-        type: 'notes',
-        id: 2,
-        attributes: {
-          title: 'NoteTitle 2',
-          body: 'note body2 note body2 note body2 note body2 note body2 note body2 note body2 note body2 note body2 note body2 note body2 note body2 note body2'
-        }
-      }, {
-        type: 'notes',
-        id: 3,
-        attributes: {
-          title: 'NoteTitle 3',
-          body: 'note body3 note body3 note body3 note body3 note body3 note body3 note body3 note body3 note body3 note body3 note body3 note body3 note body3'
-        }
-      }]
-    };
-  });
+  this.get('/notes');
 }
