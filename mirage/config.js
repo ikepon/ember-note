@@ -29,5 +29,6 @@ export default function() {
   this.get('/notes');
   this.post('/notes');
   this.get('/notes/:id');
+  this.patch('/notes/:id');
   this.delete('/notes/:id');
 }

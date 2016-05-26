@@ -1,4 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  model(params) {
+    return this.store.findRecord('note', params['note_id']);
+  },
+
+  actions: {
+    updateNote(note) {
+      note.save();
+    }
+  }
 });

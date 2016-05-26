@@ -1,1 +1,5 @@
-{{outlet}}
+<form>
+  {{input type="text" value=model.title size="50"}}
+  {{textarea value=model.body cols="80" rows="6"}}
+  <button {{action "updateNote" model}}>保存する</button>
+</form>
