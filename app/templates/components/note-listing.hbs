@@ -4,10 +4,10 @@
       {{#link-to "notes.show" note}}
         {{note.title}}
       {{/link-to}}
-      {{#link-to "notes.edit" note}}
+      {{#link-to "notes.edit" note class="btn btn-default btn-xs"}}
         編集
       {{/link-to}}
-      <button {{action "destroyNote" note}}>削除</button>
+      <i class="glyphicon glyphicon-trash" {{action "destroyNote" note}}></i>
     </li>
   {{/each}}
 </ul>
