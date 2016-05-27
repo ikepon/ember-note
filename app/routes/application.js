@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     Ember.run.next(() => {
       let currentPath = this.get('router.url');
       console.log(currentPath);
-    })
+    });
   }),
 
   model() {
