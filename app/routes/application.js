@@ -8,6 +8,7 @@ export default Ember.Route.extend({
   actions: {
     destroyNote(note) {
       note.destroyRecord();
+      this.transitionTo('/');
     }
   }
 });
