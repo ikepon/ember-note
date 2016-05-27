@@ -31,4 +31,6 @@ export default function() {
   this.get('/notes/:id');
   this.patch('/notes/:id');
   this.delete('/notes/:id');
+
+  this.get('/pages/:id');
 }

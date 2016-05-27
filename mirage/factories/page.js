@@ -6,8 +6,5 @@ export default Factory.extend({
   },
   body(i) {
     return `Page ${i} body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body`
-  },
-  note_id(i) {
-    return i
   }
 });

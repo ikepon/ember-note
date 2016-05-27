@@ -8,6 +8,6 @@ export default function(server) {
   */
 
   // server.createList('post', 10);
-  server.createList('note', 10);
-  server.createList('page', 10);
+  let note = server.create('note');
+  server.createList('page', 10, {noteId: note.id});
 }
