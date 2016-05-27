@@ -6,9 +6,8 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    deleteNote(note) {
-      note.deleteRecord();
-      note.save();
+    destroyNote(note) {
+      note.destroyRecord();
     }
   }
 });

@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    deleteNote(note) {
-      this.sendAction('deleteNote', note);
+    destroyNote(note) {
+      this.sendAction('destroyNote', note);
     }
   }
 });
