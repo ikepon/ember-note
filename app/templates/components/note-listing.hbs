@@ -1,15 +1,13 @@
-<div class="col-xs-4">
-  <ul class="notes">
-    {{#each notes as |note|}}
-      <li class="note-title">
-        {{#link-to "notes.show" note}}
-          {{note.title}}
-        {{/link-to}}
-        {{#link-to "notes.edit" note}}
-          編集
-        {{/link-to}}
-        <button {{action "destroyNote" note}}>削除</button>
-      </li>
-    {{/each}}
-  </ul>
-</div>
+<ul class="notes">
+  {{#each notes as |note|}}
+    <li class="note-title">
+      {{#link-to "notes.show" note}}
+        {{note.title}}
+      {{/link-to}}
+      {{#link-to "notes.edit" note}}
+        編集
+      {{/link-to}}
+      <button {{action "destroyNote" note}}>削除</button>
+    </li>
+  {{/each}}
+</ul>
