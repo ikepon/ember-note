@@ -9,4 +9,5 @@ export default function(server) {
 
   // server.createList('post', 10);
   server.createList('note', 10);
+  server.createList('page', 10);
 }
