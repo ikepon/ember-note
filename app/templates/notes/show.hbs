@@ -4,3 +4,11 @@
 <div class="note-body">
   {{model.body}}
 </div>
+<div class="row">
+  {{#each model.pages as |page|}}
+    <div class="col-xs-4">
+      <h3>{{page.title}}</h3>
+      <div>{{page.body}}</div>
+    </div>
+  {{/each}}
+</div>
